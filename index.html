@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/ToDoList/assets/style.css">
+</head>
+<body>
+    <header><h1>Lista de tarefas</h1></header>
+    <main>
+        <section id="create-todo-section">
+            <form action="" id="create-todo-form">
+                <input 
+                    type="text"
+                    id="description"
+                    name="description"
+                    class="input-description"
+                    aria-label="Qual tarefa adicionar a lista?"
+                    placeholder="Qual tarefa adicionar a lista?"
+                    >
+                <button
+                    type="submit"
+                    id="save-task"
+                    aria-label="Cadastrar tarefa"
+                    class="add-task-btn">+</button>
+            </form>
+        </section>
+        <section id="todo-list-section">
+            <ul></ul>
+        </section>
+        <section id="remove-done-task">
+            <button class="remove-done-tasks-btn">Remover tarefas concluídas</button>
+        </section>
+    </main>
+    <footer><p>Feito com ❤️ e dedicação para fins de aprendizado - By Rodrigo Vanelli :}</p></footer>
+</body>
+</html>
