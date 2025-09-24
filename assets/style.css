@@ -4,7 +4,7 @@ html {
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/ToDoList/assets/font/Poppins/Poppins-Regular.ttf');
+    src: url('/assets/font/Poppins/Poppins-Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -63,6 +63,25 @@ section#create-todo-section {
         button {
             height: 2.4rem;
             width: 2.4rem;
+        }
+    }
+}
+
+section#todo-list-section {
+
+    & {
+        ul {
+            width: 50rem;
+            max-width: 100%;
+
+            & {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: solid;
+                    margin-bottom: .5rem;
+                }
+            }
         }
     }
 }

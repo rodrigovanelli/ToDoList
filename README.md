@@ -16,11 +16,11 @@ O objetivo é praticar **HTML, CSS, JavaScript e versionamento aqui no GitHub** 
 
 ## Status
 Em desenvolvimento 🚧  
-Atualmente: estrutura em HTML e estilização inicial com CSS.
+Atualmente: estrutura em HTML, estilizado com CSS e funcionalidades basicas com JavaScript, incluindo adição de tarefas e uso do local storage do navegador para salvar as tarefas.
 
 ## Próximos passos
-- Implementar funcionalidade de adicionar tarefas.
-- Criar botão de remover.
+- Implementar funcionalidade de remoção em massa de tarefas concluídas.
+- Informar tarefas concluídas e não concluídas.
 - Ajustar layout para mobile.
 
 ---
