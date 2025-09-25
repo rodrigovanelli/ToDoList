@@ -19,9 +19,7 @@ Em desenvolvimento 🚧
 Atualmente: estrutura em HTML, estilizado com CSS e funcionalidades basicas com JavaScript, incluindo adição de tarefas e uso do local storage do navegador para salvar as tarefas.
 
 ## Próximos passos
-- Implementar funcionalidade de remoção em massa de tarefas concluídas.
 - Informar tarefas concluídas e não concluídas.
-- Ajustar layout para mobile.
 
 ---
 Feito com ❤️ e dedicação para fins de aprendizado.

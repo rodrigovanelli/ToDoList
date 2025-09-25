@@ -37,6 +37,24 @@ const removeTask = (taskId) => {
         .removeChild(document.getElementById(taskId));
 }
 
+const removeDoneTasks = () => {
+    const tasks = getTasksLocalStorage();
+    const tasksToRemove = tasks
+        .filter(({ checked }) => checked)
+        .map(({ id }) => id);
+
+    const updatedTasks = tasks.filter(({ checked }) => !checked);
+    setTasksLocalStorage(updatedTasks);
+    renderTasksProgressData(updatedTasks);
+
+    tasksToRemove.forEach((taskToRemove) => {
+        document
+            .getElementById('todo-list')
+            .removeChild(document.getElementById(taskToRemove));
+    });
+
+}
+
 const createTaskListItem = (task, checkbox) => {
     const list = document.getElementById('todo-list');
     const toDo = document.createElement('li');
@@ -57,7 +75,8 @@ const createTaskListItem = (task, checkbox) => {
 }
 
 const onCheckboxClick = (event) => {
-    const [id] = event.target.id.split('-');
+    const [, idStr] = event.target.id.split('-');
+    const id = Number(idStr);
     const tasks = getTasksLocalStorage();
     const updatedTasks = tasks.map((task) => {
         return parseInt(task.id) === parseInt(id)
@@ -78,7 +97,6 @@ const getCheckboxInput = ({id, description, checked}) => {
     checkbox.type = 'checkbox';
     checkbox.id = checkboxId;
     checkbox.checked = checked || false;
-
     checkbox.addEventListener('change', onCheckboxClick);
 
     label.textContent = description;
@@ -107,7 +125,7 @@ const getNewTaskData = (event) => {
 const getCreatedTaskDataInfo = (event) => new Promise((resolve) => { // simulando uma requisição assíncrona
     setTimeout(() => {
         resolve(getNewTaskData(event));
-    }, 3000);
+    }, 500);
 });
 
 const createTask = async (event) => {

@@ -71,8 +71,10 @@ section#todo-list-section {
 
     & {
         ul {
+            margin: 0;
+            padding: 0;
             width: 50rem;
-            max-width: 100%;
+            max-width: 80vw;
 
             & {
                 li {
