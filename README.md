@@ -17,6 +17,6 @@ O objetivo é praticar **HTML, CSS, JavaScript e versionamento aqui no GitHub** 
 
 ## Status
 Concluído ✅
-
+Link para testar o projeto online: https://projeto-todolist-dnc.netlify.app/
 ---
 Feito com ❤️ e dedicação para fins de aprendizado.
