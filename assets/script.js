@@ -12,7 +12,7 @@ const renderTasksProgressData = (tasks) => {
 
     const doneTasks = tasks.filter(({ checked }) => checked).length;
     const totalTasks = tasks.length;
-    // tasksProgress.innerHTML = `${doneTasks}/${totalTasks} concluídas`;
+    tasksProgress.innerHTML = `${doneTasks}/${totalTasks} concluídas`;
 }
 
 const getTasksLocalStorage = () => {

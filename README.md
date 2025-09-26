@@ -7,6 +7,7 @@ O objetivo é praticar **HTML, CSS, JavaScript e versionamento aqui no GitHub** 
 - Adicionar tarefas ✅
 - Marcar como concluídas ⬜
 - Remover tarefas ❌
+- Salvar dados no navegador ⬇️
 - Interface simples e responsiva 🎨
 
 ## Tecnologias
@@ -15,11 +16,7 @@ O objetivo é praticar **HTML, CSS, JavaScript e versionamento aqui no GitHub** 
 - JavaScript (ES6)
 
 ## Status
-Em desenvolvimento 🚧  
-Atualmente: estrutura em HTML, estilizado com CSS e funcionalidades basicas com JavaScript, incluindo adição de tarefas e uso do local storage do navegador para salvar as tarefas.
-
-## Próximos passos
-- Informar tarefas concluídas e não concluídas.
+Concluído ✅
 
 ---
 Feito com ❤️ e dedicação para fins de aprendizado.

@@ -68,7 +68,6 @@ section#create-todo-section {
 }
 
 section#todo-list-section {
-
     & {
         ul {
             margin: 0;
@@ -84,6 +83,11 @@ section#todo-list-section {
                     margin-bottom: .5rem;
                 }
             }
+        }
+    }
+    & {
+        p {
+           text-align: end;
         }
     }
 }
