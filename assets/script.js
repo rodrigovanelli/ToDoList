@@ -10,7 +10,7 @@ const renderTasksProgressData = (tasks) => {
         tasksProgress = newTasksProgressDom;
     }
 
-    const doneTasks = tasks.filter(({ checked }) => checked).length;
+    const doneTasks = tasks.filter(({ checked }) => checked).length
     const totalTasks = tasks.length;
     tasksProgress.innerHTML = `${doneTasks}/${totalTasks} concluídas`;
 }

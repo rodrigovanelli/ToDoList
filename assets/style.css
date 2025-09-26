@@ -103,3 +103,12 @@ button.remove-done-tasks-btn:hover {
     cursor: pointer;
     opacity: 0.8;
 }
+
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  text-decoration: none;
+}
